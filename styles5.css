@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.upperbody {
+    background-color: black;
+    width: 100%;
+    min-height: 40px; 
+}
+
+header {
+    padding: 20px 0;
+}
+
+nav {
+    padding: 20px 0;
+}
+
+.container {
+    width: 90%; 
+    max-width: 1200px; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo h1 {
+    color: #fff;
+    margin: 0;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif;
+}
+
+.headertable {
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #ffffff;  
+}
+
+.bodytable {
+    border: 2px solid black;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+    text-align: start;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+.headertable .bodytable h2{
+    text-align: center;
+    margin-top: 0px;
+}
+
+.inputarea {
+    font-size: 1rem;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+.agediv label{
+    font-size: 0.9rem;
+}
+
+footer {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.address, .social {
+    margin-bottom: 20px;
+}
+
+.social ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social ul li {
+    margin: 0 10px;
+}
+
+.social ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .intro-text h2 {
+        font-size: 28px;
+    }
+
+    .intro-text h3 {
+        font-size: 20px;
+    }
+
+    .about h2 {
+        font-size: 24px;
+    }
+}
+

@@ -37,7 +37,14 @@ document.getElementById('regisid').addEventListener('submit', function(event) {
     // Update the list display
     display();
 
-    alert('Registered successfully!');
+    // Show success alert
+    Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "SUCCESSFULLY REGISTER",
+        showConfirmButton: false,
+        timer: 1500
+    });
 });
 
 function display() {
@@ -63,17 +70,10 @@ function display() {
 }
 
 function deleteList(index) {
-    
     let storage = JSON.parse(localStorage.getItem('storage')) || [];
-
-    
     storage.splice(index, 1);
-   
     localStorage.setItem('storage', JSON.stringify(storage));
-
-   
     display();
 }
-
 
 display();

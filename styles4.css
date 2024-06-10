@@ -1,4 +1,4 @@
-/* Ensure the body takes up the full height */
+
 html, body {
     height: 100%;
 }
@@ -107,7 +107,8 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    gap: 2%;
+    min-width: 200px;
+    gap: 5%;
     
 }
 .mainbody a{
@@ -115,7 +116,7 @@ body {
 }
 
 .pricing-table .pricing-option {
-    width: 28%;
+    width: 100%;
     background: white;
     padding: 2%;
     text-align: center;
@@ -178,7 +179,7 @@ body {
 
 .pricing-table .pricing-option .price {
     position: relative;
-    bottom: 15px;
+    bottom: 5px;
 }
 
 .pricing-table .pricing-option .price .front span.price {
@@ -211,10 +212,10 @@ body {
     color: white;
     position: absolute;
     font-size: 13px;
-    top: -5px;
+    top: -15px;
     left: 0;
     right: 0;
-    width: 150px;
+    width: 120px;
     margin: auto;
     text-transform: uppercase;
     transform: translateY(20px);
